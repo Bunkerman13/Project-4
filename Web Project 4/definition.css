@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+main{
+    background-color: white;
+    width: 80%;
+    height: 650px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+p{
+    position: relative;
+    margin: 0;
+    font-size: xx-small;
+    color: white;
+    width: 75px;
+    transition: 1s;
+    
+}
+
+p:hover{
+    color: black;
+    cursor: pointer;
+    font-size: x-large;
+    width: 500px;
+}
+
+h3{
+    margin: 0 auto;
+    color: green;
+    background-color: greenyellow;
+    border: 2px solid green;
+    width: 74px;
+}
+
+h3:hover{
+    margin: 0 auto;
+    cursor: pointer;
+    color: greenyellow;
+    background-color: green;
+    border: 2px solid greenyellow;
+}

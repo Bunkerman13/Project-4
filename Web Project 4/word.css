@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+main{
+    background-color: white;
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+div{
+    margin: .67em 0 .67em 0;
+    float: left;
+    position: relative;
+    
+}
+
+h1{
+    margin: 0 .67em 0 .67em;
+}

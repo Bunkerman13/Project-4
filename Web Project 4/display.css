@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+main{
+    background-color: white;
+    width: 80%;
+    height: 650px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#results{
+    width: 470px;
+    margin: 0 auto;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+}
+
+img:hover{
+    border-color: red;
+}
+
+#StartOver{
+    width: 68px;
+    clear: both;
+    background-color: yellowgreen;
+    border: 2px solid green;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+#StartOver:hover{
+    background-color: green;
+    border: 2px solid yellowgreen;
+}
+
+a:hover{
+    color: yellowgreen;
+}
