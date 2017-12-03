@@ -5,18 +5,19 @@ body{
 main{
     background-color: white;
     width: 1200px;
-    height: 650px;
+    height: 800px;
     margin: 0 auto;
     border: 1px solid black;
 }
 
 div{
-    margin: .67em 0 .67em 0;
+    margin: .5em 0 .5em 0;
     float: left;
     position: relative;
     
 }
 
 h1{
-    margin: 0 .67em 0 .67em;
+    margin: 0 .5em 0 .0em;
+
 }

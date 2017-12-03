@@ -1,4 +1,4 @@
-let words = ["Hello", "We", "Are", "Doing", "This", "Time", "To", "Go", "Do", "This"];
+let words = ["Languid", "Ethereal", "Tawdry", "Zephyr", "Craven", "Vivacious", "Ossify", "Capricious", "Abhorrent", "Ubiquitous"];
 let divs = [];
 
 for (let index = 0; index < 10; index++) 
@@ -21,9 +21,9 @@ let y = document.querySelector("main").clientHeight;
 
 for (let index = 0; index < 5; index++) {
     divs[index].style.paddingLeft = 110+"px";
-    let rate = Math.random()*7500;
-    if(rate < 1000){
-        rate = 1000;
+    let rate = Math.random()*10000;
+    if(rate < 4000){
+        rate = 4000;
     }
     console.log(rate);
     anime({
@@ -38,15 +38,15 @@ for (let index = 0; index < 5; index++) {
 
 for (let index = 5; index < 10; index++){
     divs[index].style.clear = "both";
-    divs[index].style.paddingTop = 50+"px";
-    let rate = Math.random()*7500;
-    if(rate < 1000){
-        rate = 2000;
+    divs[index].style.paddingTop = 90+"px";
+    let rate = Math.random()*10000;
+    if(rate < 4000){
+        rate = 4000;
     }
     console.log(rate);
     anime({
         targets: divs[index],
-        translateX:[{value: x - document.querySelector("div").clientWidth/2, duration: rate}, {value: 0, duration: rate}],
+        translateX:[{value: x - document.querySelector("div").clientWidth/2 - 30, duration: rate}, {value: 0, duration: rate}],
         easing: "easeInCubic",
         loop: true,
     });

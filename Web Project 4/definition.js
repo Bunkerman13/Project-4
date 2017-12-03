@@ -33,9 +33,34 @@ for (let index = 0; index < 10; index++) {
     }
     num = num * 100;
     pElements[index].style.marginLeft = num+"%";
-    pElements[index].style.marginTop = 50+"px";
+    pElements[index].style.marginTop = 40+"px";
 }
 
 
 
+
+
+  
+  var followCursor = (function() {
+    var s = document.querySelector('img');
+    s.style.position = 'absolute';
+  
+    return {
+      init: function() {
+        document.body.appendChild(s);
+      },
+  
+      run: function(e) {
+        var e = e || window.event;
+        s.style.left  = (e.clientX + 5) + 'px';
+        s.style.top = (e.clientY + 5) + 'px';
+        
+      }
+    };
+  }());
+  
+  window.onload = function() {
+    followCursor.init();
+    document.body.onmousemove = followCursor.run;
+  }
 

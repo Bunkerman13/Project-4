@@ -1,11 +1,13 @@
 body{
     background-color: rgb(230, 230, 230);
+    cursor: url("Magnify_Glass.svg") auto;
+    
 }
 
 main{
     background-color: white;
     width: 80%;
-    height: 650px;
+    height: 750px;
     margin: 0 auto;
     border: 1px solid black;
 }

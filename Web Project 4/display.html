@@ -11,25 +11,66 @@
 </head>
 <body>
     <main>
+        
         <h1 style="text-align: center"></h1>
-        <h2 style="text-align: center"></h2>
+        
+        <audio id="word">
+            <source src="" type="audio/mpeg">
+        </audio>
+        
+        <button style="margin-left: 47%" onclick="document.getElementById('word').play()">Play Audio</button>
 
-        <div id="results">
-            <div id="content">
-                <p>No data yet!</p>
+    
+
+        <h2 style="text-align: center"></h2>
+        <h3 style="text-align: center"></h3>
+
+        <div style="height: 280px;">
+            <div id="results" style="margin-top: 100px;">
+                    
+                <div id="p1" style="float: left; margin-left: 10%">
+    
+                </div>
+    
+                <div id="p2" style="margin-left: 42%">
+                        
+                </div>
+    
+                <div id="p3" style="float: right; margin-right: 10%">
+                        
+                </div>
+    
+                
             </div>
         </div>
+        
 
-        <div style="margin: 0 auto" id="StartOver"><a href="https://people.rit.edu/ejp4604/igme230/Project4/Web%20Project%204/word.html">Start Over</a></div>
+        
+        <!--<div id="lid_top" style="width: 100px; height: 20px; border: 1px solid black; margin: 0 auto; clear: both"></div>
+        <a href="https://people.rit.edu/ejp4604/igme230/Project4/Web%20Project%204/word.html"><div onmouseover="lidUp()" onmouseout="lidDown()" style="width: 100px; height: 50px; border: 1px solid black; margin: 0 auto; clear: both; text-align: center">Start Over</div></a>
+        -->
+        <div style="clear: both; width: 150px; height: 200px; margin: 0 auto;"  >
+            <svg width="100" height="30"  id="lid_top">
+                
+                <rect width="100" height="30" stroke-width="3" stroke="black" style="fill:orange" />
+            </svg>
+            <a href="https://people.rit.edu/ejp4604/igme230/Project4/Web%20Project%204/word.html" onmouseover="lidUp()" onmouseout="lidDown()">
+            <svg width="100" height="70" >
+                <rect width="100" height="70" stroke-width="3" stroke="black" style="fill:orange" />
+            </svg>
+            </a>
+        </div>
+        
     </main>
     
 </body>
 
 
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
 <script src="display.js"></script>
+
+
+
+
 </html>
