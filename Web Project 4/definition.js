@@ -28,12 +28,12 @@ function check(val)
 
 for (let index = 0; index < 10; index++) {
     let num = Math.random();
-    if(num > .85){
-        num = .85;
+    if(num > .75){
+        num = .75;
     }
     num = num * 100;
     pElements[index].style.marginLeft = num+"%";
-    pElements[index].style.marginTop = 40+"px";
+    pElements[index].style.marginTop = 30+"px";
 }
 
 

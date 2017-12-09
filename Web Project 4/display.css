@@ -1,32 +1,131 @@
 body{
-    background-color: rgb(230, 230, 230);
+    background-color: #ff145e;
 }
 
 main{
     background-color: white;
     width: 80%;
-    height: 800px;
+    height: 80%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 2em;
 }
 
 #results{
     width: 100%;
-    margin: 0 auto;
+    height: 200px;
+    margin-top: 50px;
+    
 }
 
+
 img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: 2px solid black;
+    border-radius: 2em;
 }
 
 img:hover{
-    border-color: red;
+    border-color: #ff145e;
 }
 
 
  h2, h3{
+    
+    border: 2px solid black;
+    border-radius: .5em;
+    
+}
+
+h2{
+    width: 50%;
+    margin: 0 auto;
     margin-top: 5%;
 }
 
+h3{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#button{
+    width: 85px;
+    margin: 0 auto;
+}
+
+button{
+    border-radius: 1em;
+    background-color: white;
+    border: 2px solid #ff145e;
+    color: black;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ff145e;
+    color: white;
+    border-color: black;
+}
+
+
+#p1{
+    float: left; 
+    margin-left: 10%;
+}
+
+#p2{
+    margin-left: 42%;
+}
+
+#p3{
+    float: right; 
+    margin-right: 10%;
+}
+
+#svg_box{
+    clear: both; 
+    width: 100px; 
+    height: 100px; 
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 408px){
+    #button{
+        margin: 0 auto;
+    }
+    
+    #p1, #p2, #p3{
+        float: none; 
+        width: 150px;
+        margin: 0 auto;
+        
+    }
+
+    #p1{
+        margin-top: 15px;
+    }
+   
+    #results{
+        margin-top: 0px;
+        height: 500px;
+    }
+
+    main{
+        height: 100%;
+    }
+
+    #svg_box{
+        margin-left: 33%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}

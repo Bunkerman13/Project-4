@@ -1,13 +1,14 @@
 body{
-    background-color: rgb(230, 230, 230);
+    background-color: #ff145e;
 }
 
 main{
     background-color: white;
-    width: 1200px;
-    height: 800px;
+    width: 80%;
+    height: 650px;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 2em;
 }
 
 div{
@@ -21,3 +22,19 @@ h1{
     margin: 0 .5em 0 .0em;
 
 }
+
+h2{
+    background-color: white;
+    border-radius: 2em;
+    width: 350px;
+    margin: 0 auto;
+    border: 2px solid black;
+    margin-top: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+

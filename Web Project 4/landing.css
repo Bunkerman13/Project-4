@@ -1,25 +1,19 @@
 body{
-    background-color: rgb(230, 230, 230);
+    background-color: #ff145e;
 }
 
 main{
     background-color: white;
     width: 80%;
-    height: 800px;
+    height: 100%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 2em;
 }
 
-nav{
-    background-color: rgb(230, 230, 230);
-    border: 1px solid black;
-}
 
-ul{
-    padding-left: 20px;
-    padding-right: 20px;
-    list-style-type: none;
-}
+
+
 
 
 /*--------------------*/
@@ -27,7 +21,8 @@ ul{
 .jcarousel-wrapper {
     margin: 20px auto;
     position: relative;
-    border: 10px solid yellowgreen;
+    border: 3px solid black;
+    border-radius: 1em;
     width: 285px;
     height: 250px;
     
@@ -62,6 +57,7 @@ ul{
 
 .jcarousel img {
     display: block;
+    border-radius: .8em;
 }
 
 .jcarousel ul {
@@ -86,11 +82,13 @@ ul{
     width: 30px;
     height: 250px;
     text-align: center;
-    background: #4E443C;
+    background: #ff145e;
+    border-radius: 1em;
     color: #fff;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
     font: 100px/250px Arial, sans-serif;
+    transition: .5s;
 }
 
 .jcarousel-control-prev {
@@ -99,6 +97,12 @@ ul{
 
 .jcarousel-control-next {
     right: -50px;
+}
+
+.jcarousel-control-next:hover,
+.jcarousel-control-prev:hover{
+    color: black;
+    
 }
 
 .jcarousel-control-prev:hover span,
@@ -117,7 +121,7 @@ ul{
 .jcarousel-pagination {
     position: absolute;
     top: 250px;
-    left: 100px;
+    left: 65px;
 }
 
 .jcarousel-pagination a {
@@ -128,8 +132,10 @@ ul{
     line-height: 14px;
     min-width: 14px;
     
-    background: #fff;
-    color: #4E443C;
+    background: white;
+    border: 2px solid black;
+    border-radius: 1em;
+    color: black;
 
     padding: 3px;
     text-align: center;
@@ -140,9 +146,142 @@ ul{
 }
 
 .jcarousel-pagination a.active {
-    background: #4E443C;
-    color: #fff;
+    background: #ff145e;
+    color: black;
     opacity: 1;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
 }
 
+
+
+
+
+
+#top_row{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav{
+    background-color: rgb(230, 230, 230);
+    border: 1px solid black;
+    
+    width: 100%;
+    order: 1;
+}
+
+#moving_words{
+    width: 100%;
+    margin-right: 50px;
+    margin-left: 10px;
+    order: -1;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+}
+
+#display_info{
+    margin-left: 50px;
+    margin-right: 10px;
+    width: 100%;
+    order: 2;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+}
+
+#bot_row{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#find_words{
+    width: 100%;
+    order: -1;
+    margin-left: 10px;
+    margin-right: 75px;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+}
+
+#project_4{
+    width: 100%;
+    order: 1;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+}
+
+#documentation{
+    width: 100%;
+    order: 2;
+    margin-left: 75px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-radius: 2em;
+    text-align: center;
+}
+
+p{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+
+
+@media screen and (max-width: 870px){
+    main{
+        height: 100%;
+    }
+    
+    #top_row{
+        flex-direction: column;
+    }
+
+    nav{
+        order: -1;
+    }
+
+    #moving_words{
+        order: 1;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #display_info{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #bot_row{
+        flex-direction: column;
+    }
+
+    #find_words{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #project_4{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #documentation{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .jcarousel-pagination{
+        top: 235px;
+    }
+
+    .jcarousel-control-prev,
+    .jcarousel-control-next{
+        width: 45px;
+    }
+}
