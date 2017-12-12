@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="documentation.css">
+    <title>Documentation</title>
+</head>
+<body>
+    <a href="https://people.rit.edu/ejp4604/igme230/Project4/Web%20Project%204/landing.html">Back</a>
+    <main>
+        <h1><u>Documentation</u></h1>
+        <h2>Moving Words Page</h2>
+        <div>
+        <p>
+            The basis for this page was the Anime.js library.  I had to learn it in 
+            order to get the words to move within the main box.  Anime.js 
+            animates more efficiently than the base animation of css or javascript.
+        </p>
+
+        <p>
+            Each of the words has an a tag attached to it, so that when you click on
+            one it sends the user to the next page.  The SVG image is used as the 
+            background for this page.  I used css to modify borders and colors of 
+            the elements.
+        </p>
+
+        <p>
+            I used javascript in order to fix the animation each time the window was
+            resized.  I was having a problem where the animation distance of the
+            objects would not change when the window was resized.  I found, on stack
+            overflow, a way to fix this using an in-built resize function within 
+            javascript.
+        </p>
+        </div>
+        
+        <h2>Search Words Page</h2>
+        <div>
+        <p>
+            The idea of this page is for the user to find the definition for the word
+            they chose.  The SVG for this page is a magnifying glass that follows the
+            mouse.  I used similar css as the previous page to modify the colors and 
+            borders of the elements.  I used percentage elements for the main element's
+            height so it increase when the other elements get pushed down by a hovered 
+            element growing in size.
+        </p>
+
+        <p>
+            For the SVG that's following the mouse, I found code on stack overflow. I
+            modified it so that it is offset from the mouse a bit and not obstructing 
+            the mouse.
+        </p>
+
+        <p>
+            I used css transitions in order to change the size and color of each of 
+            the definition elements as the user mouses over them.  Choosing a wrong
+            choice changes it red and choosing the right one makes it green.
+        </p>
+
+        <p>
+            Choosing the right one makes a button apper in the center of the main 
+            element that says "Continue".  hovering over this changes the buttons'
+            appearence and clicking it continues on to the next page.
+        </p>
+        </div>
+
+        <h2>Display Info Page</h2>
+
+        <div>
+        <p>
+            This page takes the word and definition that the user selected in the 
+            previous pages and displays info about that word and shows gifs related 
+            to that term.  I used the "margin: 0 auto" for all but the gifs on this 
+            page. I also similar element editing of the previous pages in terms 
+            of colors and borders.
+        </p>
+
+        <p>
+            It displays the roots of the word, gifs from gify, and audio to listen 
+            to the pronunciation of the word.  We learned how to get gifs from gify
+            back in week 10.
+        </p>
+
+        <p>
+            I learned how to use audio from w3 schools.  Even though it is fairly simple
+            to use, it is something that we did not learn during our time in this class.
+            I use a button that when it's pressed, the audio plays.
+        </p>
+
+        <p>
+            At the bottom there is an SVG of a box.  When you hover over the box, an 
+            animation starts that looks like it's lifting the top of the box up.  (NOTE:
+            When you hover over the box, the user should allow the animation to play out
+            BEFORE removing the cursor from the box or else the animation will glitch).
+        </p>
+        </div>
+
+        <h2>Landing Page</h2>
+
+        <div>
+        <p>
+            For my landing page, I used flex box.  I used flexbox to effectively place 
+            and move around each of my div elements. Flexbox allowed me to order each 
+            of the elements easily and also allowed for me to easily adjust the position
+            when it came to the mobile view.
+        </p>
+
+        <p>
+            I also used JCarousel in order to make a carousel of clickable images that 
+            take the user to each of the different pages.  It is a vertical carousel that
+            goes through each of the three interactive pages as well as the Documentation
+            page.
+        </p>
+        </div>
+
+        <h2>Above and Beyond</h2>
+
+        <div>
+        <p>
+            For above and beyond I did 5 different things, some of them simpler than others.
+            One of them was implementing audio into one of my pages.  Even though that is 
+            not something that we learned to do it is still fairly simple to implement.  
+            There is an audio tag that you can use to define a piece of audio and then use 
+            a button to call back to it and use the in-built "play" function to play the
+            audio.
+        </p>
+
+        <p>
+            Another thing I did was use the Resize function for editing elements in 
+            javascript as the window resized.  I was originally having issues with 
+            animating because the distance of the animation would not change with the 
+            change of the screen size.  I was able to find, on stack overflow, the resize
+            function within javascript that allowed me to call methods and such that 
+            activated only when the window was resized.  So I reset the width and height 
+            values used in animating and recalled the animating methods within the resize 
+            function.  This resets the animation but uses the proper distance so the 
+            words don't move past the bounds.
+        </p>
+
+        <p>
+            A big part of the first and last pages of my interactive media rely on a
+            library called anime.js.  Anime.js is a library that makes animating elements
+            easier and more efficient.  I used it in the first page to move back and forth
+            between the main elements boundaries.  I also used it in the final page of the 
+            interactive media.  I mixed the animation and the SVG images to create an 
+            animation with SVG images.  It makes it look like the user is lifting the top of a box
+            off its bottom when hovering over it and closing it again when moving off of it.
+        </p>
+
+        <p>
+            For the second page, I found some javascript on stack overflow to help me.
+            I wanted to attach an SVG to the position of the mouse as it moved.  I 
+            wasn't sure how to do this so I found some code on stack overflow.  I 
+            modified the code so that the SVG would not be directly on top of the 
+            mouse and so that the proper element was being selected.  There is not
+            much for me to change in this code.
+        </p>
+
+        <p>
+            The last thing I used for above and beyond was the JCarousel library.
+            I used it on my landing page to make space for other elements on the 
+            page.  The carousel is a vertical carousel that holds links to each of
+            the three different interactive pages as well as this documentation page.
+            The JCarousel library made this incredibly easy.  I modified it so that 
+            it looks more appropriate for my website but the functionality is
+            essentially the same.
+        </p>
+        </div>
+
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/tags/tag_audio.asp">W3 Schools Audio</a></li>
+            <li><a href="https://stackoverflow.com/questions/35030642/window-onresize-in-javascript">Stack Overflow Resize</a></li>
+            <li><a href="http://animejs.com/">Anime.js Main Page</a></li>
+            <li><a href="https://stackoverflow.com/questions/7143806/make-an-image-follow-mouse-pointer">Follow the Mouse</a></li>
+            <li><a href="https://sorgalla.com/jcarousel/examples/">JCarousel Page</a></li>
+        </ul>
+    </main>
+</body>
+</html>

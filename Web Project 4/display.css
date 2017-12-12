@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lustria');
+
 body{
     background-color: #ff145e;
+    font-family: 'Lustria', serif;
 }
 
 main{
@@ -30,25 +33,21 @@ img:hover{
     border-color: #ff145e;
 }
 
+h1{
+    text-align: center;
+}
 
  h2, h3{
     
     border: 2px solid black;
     border-radius: .5em;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
     
 }
 
-h2{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-
-h3{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 5%;
-}
 
 a{
     text-decoration: none;

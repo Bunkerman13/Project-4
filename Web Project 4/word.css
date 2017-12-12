@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lustria');
+
 body{
     background-color: #ff145e;
+    background-image: url("words_background.svg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    font-family: 'Lustria', serif;
 }
 
 main{
@@ -30,6 +37,7 @@ h2{
     margin: 0 auto;
     border: 2px solid black;
     margin-top: 25px;
+    text-align: center;
 }
 
 a{

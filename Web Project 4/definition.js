@@ -41,26 +41,26 @@ for (let index = 0; index < 10; index++) {
 
 
   
-  var followCursor = (function() {
-    var s = document.querySelector('img');
-    s.style.position = 'absolute';
+  let followCursor = (function() {
+    let magGlass = document.querySelector('img');
+    magGlass.style.position = 'absolute';
   
     return {
       init: function() {
-        document.body.appendChild(s);
+        document.body.appendChild(magGlass);
       },
   
       run: function(e) {
         var e = e || window.event;
-        s.style.left  = (e.clientX + 5) + 'px';
-        s.style.top = (e.clientY + 5) + 'px';
+        magGlass.style.left  = (e.clientX + 5) + 'px';
+        magGlass.style.top = (e.clientY + 5) + 'px';
         
       }
     };
   }());
   
-  window.onload = function() {
-    followCursor.init();
-    document.body.onmousemove = followCursor.run;
-  }
+  
+  followCursor.init();
+  document.body.onmousemove = followCursor.run;
+  
 
